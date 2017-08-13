@@ -1,0 +1,25 @@
+$color-primary: red;
+$font-size: 2em;
+
+*:not(title, script) {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1em;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  display: block;
+}
+
+button {
+  display: block;
+}
+
+pre {
+  background-color: $color-primary;
+  display: inline-block;
+  font-size: $font-size;
+}
