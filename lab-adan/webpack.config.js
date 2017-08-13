@@ -5,14 +5,13 @@ const ExtractPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: `${__dirname}/src/main.js`,
-
   output: {
-    filename: 'bundle-[hash].js',
+    filename: `bundle-[hash].js`,
     path: `${__dirname}/build`,
     publicPath: '/',
   },
   plugins: [
-    new HtmlPlugin({ template: `${__dirname}/src/index.html` }),
+    new HtmlPlugin({ template: `${__dirname}/src/index.html`}),
     new ExtractPlugin('bundle-[hash].css'),
   ],
   module: {
@@ -23,7 +22,7 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.scss$/,
+        test: /\.scss/,
         loader: ExtractPlugin.extract(['css-loader', 'sass-loader']),
       },
     ],
