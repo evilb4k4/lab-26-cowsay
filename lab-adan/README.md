@@ -1,7 +1,5 @@
 ## Cowsay 
 
-What?
-
 Cowsay Lorem will get a cow to
 tell you a bunch of random words!
 
